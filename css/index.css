@@ -5,20 +5,28 @@
     --white: #ffffff;
     --black: #212121;
     --soft_gray: #DFE9F3;
+
+    --tablet: 768px;
+    --laptop: 1140px;
+    --desktop: 1440px;
 }
 
 /*TODO::Este pedazo de código es para normalizar el uso de los REM y usar el CSS Box Model*/
 html{
     font-size: 62.5%;
     box-sizing: border-box;
-    scroll-snap-type: y mandatory;
 }
 
-.nav-bg,
-.services,
-.form{
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+@media (min-width: 768px){
+    html{
+        scroll-snap-type: y mandatory;
+    }
+    .nav-bg,
+    .services,
+    .form{
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
 }
 
 body{
