@@ -30,6 +30,26 @@ body{
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--soft_gray); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray); 
+}
 /**/
 
 .shadow{
